@@ -1,0 +1,71 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Script")
+ 
+local Tab = Window:NewSection("Credits: TGMANKASKE")
+ 
+
+
+Tab:CreateButton("Equip Best Click", function()
+print("Give credits to KMAN || KontrollAll || TGMANKASKE")
+
+local args = {
+	game:GetService("ReplicatedStorage"):WaitForChild("Items"):WaitForChild("Pencil"):WaitForChild("120"),
+	false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClickChangeEvent"):FireServer(unpack(args))
+
+end)
+
+
+Tab:CreateButton("Get Free Rebirth", function()
+print("Give credits to KMAN || KontrollAll || TGMANKASKE")
+
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("RebirthEvent"):FireServer()
+
+end)
+
+Tab:CreateButton("Inf. Wins", function()
+print("Give credits to KMAN || KontrollAll || TGMANKASKE")
+
+local args = {
+	"45"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("WinEvent"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateToggle("Inf. Strenght", function(no)
+_G.GetWins = no
+while _G.GetWins== true do
+    wait() 
+print("Give credits to KMAN || KontrollAll || TGMANKASKE")
+
+local args = {
+	"Reward9"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+
+local args = {
+	"Reward9"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+
+local args = {
+	"Reward9"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+
+end
+end)
+
+Tab:CreateToggle("Complete PASSE", function(no)
+_G.GetWins = no
+while _G.GetWins== true do
+    wait() 
+print("Give credits to KMAN || KontrollAll || TGMANKASKE")
+
+game:GetService("ReplicatedStorage"):WaitForChild("EventShopPassEvent"):FireServer()
+
+end
+end)
