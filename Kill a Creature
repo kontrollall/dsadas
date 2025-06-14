@@ -3,7 +3,17 @@ local Window = Library:NewWindow("Script")
  
 local Tab = Window:NewSection("Credits: TGMANKASKE")
  
+Tab:CreateButton("Equip Best Sworld", function()
+print("Give credits to KMAN || KontrollAll || TGMANKASKE")
 
+local args = {
+	"Swords",
+	"45",
+	true
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("OnEquipEvent"):FireServer(unpack(args))
+
+end)
 
 Tab:CreateButton("Equip Best Click", function()
 print("Give credits to KMAN || KontrollAll || TGMANKASKE")
